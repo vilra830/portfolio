@@ -1,0 +1,49 @@
+@use "../partials/colors";
+@use "../partials/mixins";
+@use "../partials/fonts";
+@use "../partials/media-queries" as q;
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__details {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100px;
+    width: 50%;
+    text-align: center;
+  }
+
+  @include q.tablet {
+    width: 100%;
+    margin: auto;
+  }
+
+  @include q.large-tablet {
+    width: 100%;
+    margin: auto;
+  }
+
+  @include q.laptop {
+    width: 100%;
+    margin: auto;
+  }
+
+  @include q.desktop {
+    width: 100%;
+    margin: auto;
+  }
+  @include q.celphone {
+    width: 100%;
+    margin: auto;
+  }
+}
+.contact__header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}

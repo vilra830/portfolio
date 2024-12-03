@@ -1,0 +1,45 @@
+@use "../partials/colors";
+@use "../partials/mixins";
+@use "../partials/fonts";
+@use "../partials/media-queries" as q;
+
+.about {
+  display: flex;
+
+  &__container {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+  &__img {
+    padding-right: 20px;
+    height: 50%;
+  }
+
+  @include q.tablet {
+    width: 90%;
+    margin: auto;
+  }
+
+  @include q.large-tablet {
+    width: 80%;
+    margin: auto;
+  }
+
+  @include q.laptop {
+    width: 80%;
+    margin: auto;
+  }
+
+  @include q.desktop {
+    width: 80%;
+    margin: auto;
+  }
+  @include q.celphone {
+    width: 80%;
+    margin: auto;
+  }
+}
