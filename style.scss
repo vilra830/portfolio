@@ -1,0 +1,17 @@
+@use "./scss/partials/media-queries";
+@use "./scss/sections/header";
+@use "./scss/partials/mixins";
+@use "./scss/sections/main";
+@use "./scss/sections/reviews";
+@use "./scss/sections/navbar";
+@use "./scss/sections/footer";
+@use "./scss/sections/form";
+@use "./scss/sections/abouts";
+
+* {
+  font-family: "Tomorrow";
+  color: #1f242a;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}

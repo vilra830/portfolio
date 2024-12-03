@@ -1,0 +1,44 @@
+@use "../partials/colors";
+@use "../partials/mixins";
+@use "../partials/fonts";
+@use "../partials/media-queries" as q;
+
+footer {
+  @include mixins.flex(row, space-between);
+  @include mixins.text-description(fonts.$open-sans, white, center);
+  align-items: center;
+  background-color: #689572;
+  height: 50px;
+
+  @include q.tablet {
+    width: 90%;
+    margin: auto;
+  }
+
+  @include q.large-tablet {
+    width: 80%;
+    margin: auto;
+  }
+
+  @include q.laptop {
+    width: 80%;
+    margin: auto;
+  }
+
+  @include q.desktop {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.footer__bar {
+  display: flex;
+  height: 50px;
+  background-color: #1f242a;
+  align-items: center;
+  justify-content: space-around;
+  .footer__icon {
+    color: #2ad881;
+    text-align: center;
+  }
+}

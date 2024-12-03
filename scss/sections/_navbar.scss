@@ -1,0 +1,89 @@
+@use "../partials/colors";
+@use "../partials/mixins";
+@use "../partials/fonts";
+@use "../partials/media-queries" as q;
+
+.navbar {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  a {
+    color: #1f242a;
+    text-decoration: none;
+    padding: 5px;
+  }
+  div {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+// .navbar {
+//   background-color: white;
+//   position: sticky;
+//   top: 0;
+//   overflow: hidden;
+
+//   @include q.tablet{
+
+//     width: 90%;
+//     margin: auto;
+
+// }
+
+// @include q.large-tablet {
+//     width: 80%;
+//     margin: auto;
+
+// }
+
+// @include q.laptop{
+//     width: 80%;
+//     margin: auto;
+
+// }
+
+// @include q.desktop{
+
+//     width: 80%;
+//     margin: auto;
+
+// }
+
+//   }
+
+//   /* Navbar links */
+//   .navbar__icons  {
+//   float: right;
+//   display: block;
+//   @include mixins.text-description(fonts.$open-sans, colors.$black-olive, center);
+//   text-decoration: none;
+//   padding: 14px;
+
+//   }
+
+//  .navbar a:active{
+
+//   @include mixins.colors(colors.$oxley, white);
+
+//  }
+
+//  .navbar a:visited{
+
+//   @include mixins.colors(colors.$morning-blue, white);
+
+//  }
+//  .navbar a:hover{
+
+//   @include mixins.colors( colors.$black-olive , white );
+
+// }
+
+// #navbar__icons--left{
+
+//   float: left;
+//   padding-left: 70px;
+//   font-size: 20px;
+//   color: colors.$black-olive;
+//   }

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .about-me__card {
+        border: 1px solid blue;
+        display: flex;
+      }
+
+      .project__card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 100%;
+
+        .section__header {
+          width: 100%;
+          text-align: center;
+        }
+
+        .project__card__proj {
+          width: 50%;
+          position: relative;
+          color: #1f242a;
+
+          .center-top {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+          }
+
+          .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+          }
+        }
+      }
+
+      .about__me {
+        display: flex;
+        flex-wrap: wrap;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 50%;
+
+          img {
+            width: 50%;
+            padding: 20px;
+            padding-left: 20px;
+            /* transform: rotate(-10deg); */
+          }
+        }
+      }
+
+      .footer__bar {
+        display: flex;
+        height: 50px;
+        background-color: #1f242a;
+        align-items: center;
+        justify-content: space-around;
+        .footer__icon {
+          color: #2ad881;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="nav__link">Home</a>
+      <div>
+        <a href="./pages/about-me.html" class="nav__link">About</a>
+        <a href="./pages/contact.html" class="nav__link">Contact</a>
+        <a href="./pages/project.html" class="nav__link">Projects</a>
+        <a href="./pages/tech-stack.html" class="nav__link">Tech Stack</a>
+      </div>
+    </nav>
+    <header class="header">
+      <section class="header__text">
+        <h1>
+          Hi everyone! <br />
+          I'm Rhea Villafuerte
+        </h1>
+        <h2>An Aspiring Software Engineer</h2>
+      </section>
+      <section class="header__img"><img src="./profile1.jpg" /></section>
+    </header>
+    <main>
+      <section class="about__me">
+        <div class="bawlang">
+          <img class="img__2" src="./8.jpg" />
+        </div>
+
+        <div>
+          <h3>About Me</h3>
+          <p>
+            I'm passionate about working in the information technology industry.
+            I love to code and collaborate with peers to build different kinds
+            of software applications.
+          </p>
+        </div>
+      </section>
+      <section class="project__card">
+        <h2 class="section__header">Projects & Tech Stack</h2>
+        <article class="project__card__proj">
+          <a href="./pages/project.html"
+            ><img src="./4.jpg" alt="card" />
+            <h2 class="center-top">Projects</h2>
+            <p class="centered">Please click to see my Projects</p></a
+          >
+        </article>
+        <article class="project__card__proj">
+          <a href="./pages/tech-stack.html"
+            ><img src="./5.jpg" alt="card" />
+            <h2 class="center-top">Tech Stack</h2>
+            <p class="centered">
+              Please click to see <br />
+              the Tools and Technologies I used.
+            </p></a
+          >
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer__bar">
+      <div class="footer__icon">Copyright 2024</div>
+      <div class="footer__icon">More information coming up</div>
+    </footer>
+  </body>
+</html>
