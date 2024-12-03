@@ -1,158 +1,121 @@
 .header {
   display: flex;
 }
-.header .header__text {
+.header__text {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   background-color: #1f242a;
+  align-items: center;
 }
-.header .header__text h1 {
+.header__name {
   color: #2ad881;
+  text-align: center;
 }
-.header .header__img {
+.header__title {
+  color: white;
+  text-align: center;
+}
+.header__img {
   width: 50%;
 }
-.header .header__img img {
+.header img {
   width: 100%;
   height: 100%;
 }
-
-.main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  width: 100%;
-}
 @media screen and (min-width: 577px) {
-  .main {
-    width: 90%;
+  .header {
+    width: 100%;
     margin: auto;
   }
 }
 @media screen and (min-width: 769px) {
-  .main {
+  .header {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .header {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .header {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 375px) {
+  .header {
+    width: 100%;
+    margin: auto;
+  }
+  .header .header__title {
+    font-size: small;
+  }
+  .header .header__name {
+    font-size: small;
+  }
+}
+
+.section__header {
+  width: 100%;
+  text-align: center;
+}
+
+.project__card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+  padding: 5px;
+}
+.project__card .project__card__proj {
+  display: flex;
+  flex-wrap: wrap;
+  color: #1f242a;
+  border: 1px solid #1f242a;
+  padding: 10px;
+}
+.project__card .project__card__proj .center-top {
+  width: 100%;
+  text-align: center;
+}
+.project__card .project__card__proj .centered {
+  text-align: center;
+}
+@media screen and (min-width: 577px) {
+  .project__card {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .project__card {
     width: 80%;
     margin: auto;
   }
 }
 @media screen and (min-width: 1025px) {
-  .main {
+  .project__card {
     width: 80%;
     margin: auto;
   }
 }
 @media screen and (min-width: 1081px) {
-  .main {
+  .project__card {
     width: 80%;
     margin: auto;
   }
 }
-
-.main__heading {
-  font-family: "Rammetto One";
-  color: #ebc9c4;
-  text-align: center;
-  width: 100%;
-}
-
-details {
-  width: 100%;
-}
-
-details > summary {
-  padding: 5px;
-  background-color: #EBC9C4;
-  cursor: pointer;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #404040;
-  text-align: left;
-  font-weight: bolder;
-}
-
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.menu__item {
-  background-color: #EBC9C4;
-  display: flex;
-  flex-direction: column;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #404040;
-  text-align: center;
-  padding: 5px;
-  height: 40%;
-  width: 30%;
-  margin: 10px;
-}
-
-.food_caution {
-  display: flex;
-  justify-content: space-around;
-}
-
-.fa-solid {
-  color: #689572;
-  padding-right: 5px;
-}
-
-.space {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #404040;
-  text-align: center;
-  font-size: 12px;
-  padding-bottom: 5px;
-}
-
-.menu__image {
-  padding: 10px;
-}
-
-.review {
-  background-color: #FAA196;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  gap: 15px;
-}
-
-.review__heading {
-  font-family: "Rammetto One";
-  color: white;
-  text-align: center;
-  width: 100%;
-  font-size: xx-large;
-}
-
-.review__item {
-  border: 2px solid white;
-  width: 33.33%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #404040;
-  text-align: center;
-  font-style: italic;
-  font-size: small;
-  font-weight: bold;
-  padding: 10px;
-  margin-bottom: 15px;
-}
-
-.fa-quote-right, .fa-quote-left {
-  color: #404040;
-}
-
-.review__paragraph--name {
-  float: left;
-}
-
-.review__paragraph--date {
-  float: right;
+@media screen and (min-width: 375px) {
+  .project__card {
+    width: 100%;
+    margin: auto;
+  }
 }
 
 .navbar {
@@ -170,269 +133,234 @@ details > summary {
   display: flex;
   justify-content: flex-end;
 }
-
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: white;
-  text-align: center;
-  align-items: center;
-  background-color: #689572;
-  height: 50px;
-}
 @media screen and (min-width: 577px) {
-  footer {
+  .navbar {
     width: 90%;
     margin: auto;
   }
 }
 @media screen and (min-width: 769px) {
-  footer {
+  .navbar {
     width: 80%;
     margin: auto;
   }
 }
 @media screen and (min-width: 1025px) {
-  footer {
+  .navbar {
     width: 80%;
     margin: auto;
   }
 }
 @media screen and (min-width: 1081px) {
-  footer {
+  .navbar {
     width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 375px) {
+  .navbar {
+    width: 100%;
     margin: auto;
   }
 }
 
 .footer__bar {
-  display: flex;
   height: 50px;
   background-color: #1f242a;
   align-items: center;
-  justify-content: space-around;
-}
-.footer__bar .footer__icon {
-  color: #2ad881;
-  text-align: center;
-}
-
-.form_container {
-  background-color: #faa196;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (min-width: 577px) {
-  .form_container {
-    width: 90%;
-    margin: auto;
-  }
-}
-@media screen and (min-width: 769px) {
-  .form_container {
-    width: 80%;
-    margin: auto;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .form_container {
-    width: 80%;
-    margin: auto;
-  }
-}
-@media screen and (min-width: 1081px) {
-  .form_container {
-    width: 80%;
-    margin: auto;
-  }
-}
-
-.form__heading {
-  font-family: "Rammetto One";
-  color: white;
-  text-align: center;
-  margin-top: 6px;
-}
-
-.form__paragraph {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-}
-
-input[type=text], input[type=email], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  color: #404040;
-}
-
-button[type=submit] {
-  background-color: #689572;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  margin-top: 6px;
-}
-
-button[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.input_label {
-  width: 25%;
-  float: left;
-  margin-top: 6px;
-}
-
-.input_bar {
-  width: 75%;
-  float: left;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-.about {
-  background-color: #faa196;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-}
-@media screen and (min-width: 577px) {
-  .about {
-    width: 90%;
-    margin: auto;
-  }
-}
-@media screen and (min-width: 769px) {
-  .about {
-    width: 80%;
-    margin: auto;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .about {
-    width: 80%;
-    margin: auto;
-  }
-}
-@media screen and (min-width: 1081px) {
-  .about {
-    width: 80%;
-    margin: auto;
-  }
-}
-
-.about__heading {
-  font-family: "Rammetto One";
-  color: white;
-  text-align: center;
-  width: 100%;
-}
-
-.about__quote {
-  font-family: "Rammetto One";
-  color: #404040;
-  text-align: center;
-  font-size: smaller;
-}
-
-.about__paragraph {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #404040;
-  text-align: justify;
-  font-size: smaller;
-  padding: 5px 20px 5px 20px;
-}
-
-.about__information {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.about__location {
-  border: 1px solid white;
-  background-color: white;
-  width: 60%;
-  object-fit: fill;
-  align-self: center;
-  padding: 5px;
-}
-
-table {
-  border-collapse: collapse;
-  width: 50%;
-  align-self: center;
-}
-
-td, th {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #404040;
-  text-align: center;
-  border-bottom: 1px solid #dddddd;
-  padding: 8px;
-}
-
-.about__phone {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
-  padding-bottom: 10px;
-  gap: 5px;
+  justify-content: space-between;
+}
+.footer__bar .footer__icon {
+  font-family: "Tomorrow";
+  color: #2ad881;
+  text-align: center;
+}
+@media screen and (min-width: 577px) {
+  .footer__bar {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .footer__bar {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .footer__bar {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .footer__bar {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 375px) {
+  .footer__bar {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.about {
+  display: flex;
+}
+.about__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.about__container__img {
+  width: 50%;
+  padding: 20px;
+  padding-left: 20px;
+  height: 30px;
+}
+@media screen and (min-width: 577px) {
+  .about {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .about {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .about {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .about {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 375px) {
+  .about {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.tech__stack {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 5px;
+  width: 40%;
+  height: 100%;
+}
+.tech__stack__brands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+.tech__stack .fa-brands {
+  font-size: 60px;
+  text-align: center;
+}
+@media screen and (min-width: 577px) {
+  .tech__stack {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .tech__stack {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .tech__stack {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .tech__stack {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 375px) {
+  .tech__stack {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.tech__stack__header {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
 }
-
-.about__heading--details {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #404040;
+.contact__details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100px;
+  width: 50%;
   text-align: center;
-  font-weight: bold;
+}
+@media screen and (min-width: 577px) {
+  .contact {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .contact {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .contact {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .contact {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 375px) {
+  .contact {
+    width: 100%;
+    margin: auto;
+  }
 }
 
-.about__phone--details {
-  width: 20%;
-  padding: 10px;
+.contact__header {
+  width: 100%;
   text-align: center;
-  height: auto;
-}
-
-#about__icons {
-  color: #404040;
-  padding: 5px;
+  margin-bottom: 20px;
 }
 
 * {

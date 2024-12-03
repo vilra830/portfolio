@@ -5,24 +5,60 @@
 
 .header {
   display: flex;
-  .header__text {
+
+  &__text {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
     background-color: #1f242a;
-
-    h1 {
-      color: #2ad881;
-    }
+    align-items: center;
   }
 
-  .header__img {
-    width: 50%;
+  &__name {
+    color: #2ad881;
+    text-align: center;
+  }
 
-    img {
-      width: 100%;
-      height: 100%;
+  &__title {
+    color: white;
+    text-align: center;
+  }
+
+  &__img {
+    width: 50%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  @include q.tablet {
+    width: 100%;
+    margin: auto;
+  }
+
+  @include q.large-tablet {
+    width: 100%;
+    margin: auto;
+  }
+
+  @include q.laptop {
+    width: 100%;
+    margin: auto;
+  }
+
+  @include q.desktop {
+    width: 100%;
+    margin: auto;
+  }
+  @include q.celphone {
+    width: 100%;
+    margin: auto;
+    .header__title {
+      font-size: small;
+    }
+    .header__name {
+      font-size: small;
     }
   }
 }

@@ -3,46 +3,56 @@
 @use "../partials/fonts";
 @use "../partials/media-queries" as q;
 
-.about {
+.tech__stack {
   display: flex;
+  flex-direction: row;
+  //justify-content: space-between;
+  // flex-wrap: wrap;
+  gap: 10px;
+  padding: 5px;
+  width: 40%;
+  height: 100%;
 
-  &__container {
+  &__brands {
     display: flex;
-
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
-
-    &__img {
-      width: 50%;
-      padding: 20px;
-      padding-left: 20px;
-      height: 30px;
-    }
+    height: 300px;
+  }
+  .fa-brands {
+    font-size: 60px;
+    text-align: center;
   }
 
   @include q.tablet {
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
 
   @include q.large-tablet {
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
 
   @include q.laptop {
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
 
   @include q.desktop {
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
+
   @include q.celphone {
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
+}
+
+.tech__stack__header {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
 }
