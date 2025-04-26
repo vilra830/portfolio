@@ -1,0 +1,372 @@
+.header {
+  display: flex;
+}
+.header__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1f242a;
+  align-items: center;
+}
+.header__name {
+  color: #2ad881;
+  text-align: center;
+}
+.header__title {
+  color: white;
+  text-align: center;
+}
+.header__img {
+  width: 50%;
+}
+.header img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 577px) {
+  .header {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .header {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .header {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .header {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 430px) {
+  .header {
+    width: 100%;
+    margin: auto;
+  }
+  .header .header__title {
+    font-size: small;
+  }
+  .header .header__name {
+    font-size: small;
+  }
+}
+
+.section__header {
+  width: 100%;
+  text-align: center;
+}
+
+.project__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 15px;
+  padding: 5px;
+}
+.project__card .project__card__proj {
+  display: flex;
+  flex-wrap: wrap;
+  color: #1f242a;
+  border: 1px solid #1f242a;
+  padding: 10px;
+}
+.project__card .project__card__proj .center-top {
+  width: 100%;
+  text-align: center;
+}
+.project__card .project__card__proj .centered {
+  text-align: center;
+}
+@media screen and (min-width: 577px) {
+  .project__card {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .project__card {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .project__card {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .project__card {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 430px) {
+  .project__card {
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar a {
+  color: #1f242a;
+  text-decoration: none;
+  padding: 5px;
+}
+.navbar div {
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (min-width: 577px) {
+  .navbar {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .navbar {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .navbar {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .navbar {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 430px) {
+  .navbar {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.footer__bar {
+  height: 50px;
+  background-color: #1f242a;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__bar .footer__icon {
+  font-family: "Tomorrow";
+  color: #2ad881;
+  text-align: center;
+}
+@media screen and (min-width: 577px) {
+  .footer__bar {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .footer__bar {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .footer__bar {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .footer__bar {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 430px) {
+  .footer__bar {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.about {
+  display: flex;
+}
+.about__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.about__img {
+  padding-right: 20px;
+  height: 50%;
+}
+@media screen and (min-width: 577px) {
+  .about {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .about {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .about {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .about {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 430px) {
+  .about {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.tech__stack {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 5px;
+  width: 40%;
+  height: 100%;
+}
+.tech__stack__brands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+.tech__stack .fa-brands {
+  font-size: 60px;
+  text-align: center;
+}
+@media screen and (min-width: 577px) {
+  .tech__stack {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .tech__stack {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .tech__stack {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .tech__stack {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 430px) {
+  .tech__stack {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.tech__stack__header {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.contact__details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100px;
+  width: 50%;
+  text-align: center;
+}
+@media screen and (min-width: 577px) {
+  .contact {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .contact {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .contact {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .contact {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 430px) {
+  .contact {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.contact__header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+* {
+  font-family: "Tomorrow";
+  color: #1f242a;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

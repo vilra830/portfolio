@@ -1,0 +1,60 @@
+@use "../partials/colors";
+@use "../partials/mixins";
+@use "../partials/fonts";
+@use "../partials/media-queries" as q;
+
+.section__header {
+  width: 100%;
+  text-align: center;
+}
+
+.project__card {
+  display: flex;
+  flex-direction: row;
+  //flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+  padding: 5px;
+
+  .project__card__proj {
+    display: flex;
+    flex-wrap: wrap;
+    color: #1f242a;
+    border: 1px solid #1f242a;
+    padding: 10px;
+
+    .center-top {
+      width: 100%;
+      text-align: center;
+    }
+
+    .centered {
+      text-align: center;
+    }
+  }
+  @include q.tablet {
+    width: 80%;
+    margin: auto;
+  }
+
+  @include q.large-tablet {
+    width: 80%;
+    margin: auto;
+  }
+
+  @include q.laptop {
+    width: 80%;
+    margin: auto;
+  }
+
+  @include q.desktop {
+    width: 80%;
+    margin: auto;
+  }
+
+  @include q.celphone {
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,37 @@
+@use "../partials/colors";
+@use "../partials/mixins";
+@use "../partials/fonts";
+@use "../partials/media-queries" as q;
+
+.footer__bar {
+  height: 50px;
+  background-color: #1f242a;
+  align-items: center;
+  @include mixins.flex(row, space-between);
+  .footer__icon {
+    @include mixins.text-description(fonts.$tomorrow, colors.$shamrock, center);
+  }
+  @include q.tablet {
+    width: 100%;
+    margin: auto;
+  }
+
+  @include q.large-tablet {
+    width: 100%;
+    margin: auto;
+  }
+
+  @include q.laptop {
+    width: 100%;
+    margin: auto;
+  }
+
+  @include q.desktop {
+    width: 100%;
+    margin: auto;
+  }
+  @include q.celphone {
+    width: 100%;
+    margin: auto;
+  }
+}
